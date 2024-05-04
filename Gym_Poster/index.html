@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omkar  Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset  */
+    body{
+        /* background: url('img/fit.jpg'); */
+        background: url('img/fit.jpg');
+        /* background-repeat: no-repeat; */
+        color: white;
+        margin: 18px;
+        padding: 14px;
+    }
+    .left{
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 15px;
+        top: 11px;
+        }
+    .left img{
+        width: 80px;
+        margin: -6px;
+        padding: 11px;
+        /* filter changes the whole image into invert colour  */
+        filter: invert(100%);  
+    }
+    .left div{
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 37%;
+        margin: -27px auto;
+        /* border: 2px solid green; */
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+        padding: 9px;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 15px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 10px;
+    }
+    .navbar li a:hover, .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn{
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 3px 14px;
+        border-radius: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        float:inline-end;
+    }
+    .btn :hover{
+        background-color: grey;
+    }
+    .container{
+        border: 2px solid white;
+        color:  rgb(173, 121, 173);
+        margin: 125px;
+        padding: 20px;
+        width: 28%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 31px;
+        float: right;
+    }
+    .form-group input{
+        text-align:center;
+        display:inline-block;
+        width: 75%;
+        padding: 3px;
+        border: 2px solid black;
+        margin: 3px auto;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+    .container h1{
+        display:inline-block ;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo  -->
+        <div class="left">
+            <img src="img\logo.jpg">
+            <div>Om </div>
+            <div>Fitness </div>
+        </div>
+        <!-- mid box for navgation  -->     
+       <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+        </div>        <!-- right box for buttons  -->
+        <div class="right">
+            <button class="btn">E-mail Us</button>
+            <button class="btn">Contact Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The best Gym of Gunjoti</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+                <input type="number" name="" placeholder="Enter your age">
+                <input type="text" name="" placeholder="Enter your E-mail">
+            </div>
+            <button class="btn">Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>
